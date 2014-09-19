@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6BD023C6-3FFA-4CF5-8D8B-09F65DEC5755</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Realestate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D125AD1646EF0CF799721BD1F0B5922F332074BF</key>
+		<string>https://github.com/gbaldera/realestate-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Realestate/Realestate.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D125AD1646EF0CF799721BD1F0B5922F332074BF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gbaldera/realestate-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D125AD1646EF0CF799721BD1F0B5922F332074BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D125AD1646EF0CF799721BD1F0B5922F332074BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>realestate-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
