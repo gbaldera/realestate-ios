@@ -12,6 +12,8 @@
 		B762BAB67E18041770C6EBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762BB141D0299AB117F50DE /* AppDelegate.swift */; };
 		DF2175DB19CBC79900286679 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2175DA19CBC79900286679 /* Images.xcassets */; };
 		DF2175EA19CBC79A00286679 /* RealestateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2175E919CBC79A00286679 /* RealestateTests.swift */; };
+		DFA3F3A319D86055002AB3AC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA3F3A019D86035002AB3AC /* Alamofire.framework */; };
+		DFA3F3A519D86072002AB3AC /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DFA3F3A019D86035002AB3AC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +24,35 @@
 			remoteGlobalIDString = DF2175D219CBC79900286679;
 			remoteInfo = Realestate;
 		};
+		DFA3F39F19D86035002AB3AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFA3F39A19D86035002AB3AC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		DFA3F3A119D86035002AB3AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFA3F39A19D86035002AB3AC /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFA3F3A419D8605E002AB3AC /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFA3F3A519D86072002AB3AC /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5A00F2A26EAE4BEE99B698D2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +66,7 @@
 		DF2175E319CBC79A00286679 /* RealestateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealestateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2175E819CBC79A00286679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF2175E919CBC79A00286679 /* RealestateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateTests.swift; sourceTree = "<group>"; };
+		DFA3F39A19D86035002AB3AC /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFA3F3A319D86055002AB3AC /* Alamofire.framework in Frameworks */,
 				739FE842783647A89FDF74CD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +148,7 @@
 		B762BD647679935A4F5786D6 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				DFA3F39A19D86035002AB3AC /* Alamofire.xcodeproj */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -178,6 +211,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DFA3F39B19D86035002AB3AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFA3F3A019D86035002AB3AC /* Alamofire.framework */,
+				DFA3F3A219D86035002AB3AC /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +232,7 @@
 				DF2175D019CBC79900286679 /* Frameworks */,
 				DF2175D119CBC79900286679 /* Resources */,
 				8E282990ACF6476F9E43DDC3 /* Copy Pods Resources */,
+				DFA3F3A419D8605E002AB3AC /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +290,12 @@
 			mainGroup = DF2175CA19CBC79900286679;
 			productRefGroup = DF2175D419CBC79900286679 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DFA3F39B19D86035002AB3AC /* Products */;
+					ProjectRef = DFA3F39A19D86035002AB3AC /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DF2175D219CBC79900286679 /* Realestate */,
@@ -254,6 +303,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DFA3F3A019D86035002AB3AC /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = DFA3F39F19D86035002AB3AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFA3F3A219D86035002AB3AC /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = DFA3F3A119D86035002AB3AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DF2175D119CBC79900286679 /* Resources */ = {
@@ -430,11 +496,16 @@
 			baseConfigurationReference = 7788ADE128924FFFBDE6850D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Realestate/Vendor/Alamofire/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Realestate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Realestate/Bridge.h;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Realestate/Vendor/Alamofire\"/**";
 			};
 			name = Debug;
 		};
@@ -443,11 +514,16 @@
 			baseConfigurationReference = 7788ADE128924FFFBDE6850D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Realestate/Vendor/Alamofire/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Realestate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Realestate/Bridge.h;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Realestate/Vendor/Alamofire\"/**";
 			};
 			name = Release;
 		};

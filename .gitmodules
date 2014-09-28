@@ -1,0 +1,3 @@
+[submodule "Realestate/Vendor/Alamofire"]
+	path = Realestate/Vendor/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
